@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "python-web-hw-05"
+version = "0.1.0"
+description = "A console script that returns the exchange rate."
+authors = ["Vadim Marenko <vadim.marenko@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+packages = [{include = "python_web_hw_05"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiohttp = "^3.8.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
