@@ -90,7 +90,9 @@ def data_processing(data):
                     exchange_result.append(currency_rate)
 
                 except (KeyError, ValueError) as e:
-                    logging.error(f"{date_exc} Privatbank do not change {currency}.\n")
+                    logging.error(
+                        f"{date_exc} Privatbank do not exchange {currency}.\n"
+                    )
 
         return exchange_result
 
