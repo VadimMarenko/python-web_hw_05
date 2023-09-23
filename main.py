@@ -21,14 +21,14 @@ parser.add_argument(
 parser.add_argument(
     "currency",
     type=str,
-    nargs="?",
+    nargs="*",
     help="Currency: GBP, PLN, CHF",
 )
 args = vars(parser.parse_args())
 days = args.get("days")
 currency_add = args.get("currency")
 if currency_add:
-    CURRENCIES_LIST.append(currency_add)
+    CURRENCIES_LIST.extend(currency_add)
 
 
 def make_date_list(days: str):
