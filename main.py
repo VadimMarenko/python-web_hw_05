@@ -22,7 +22,7 @@ parser.add_argument(
     "currency",
     type=str,
     nargs="*",
-    help="Currency: GBP, PLN, CHF",
+    help="Optional list of currencies: GBP PLN CHF",
 )
 args = vars(parser.parse_args())
 days = args.get("days")
