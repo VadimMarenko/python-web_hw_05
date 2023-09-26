@@ -3,7 +3,7 @@ import asyncio
 from datetime import datetime, timedelta
 import logging
 import platform
-
+from pprint import pprint
 import aiohttp
 
 
@@ -105,4 +105,4 @@ if __name__ == "__main__":
     if platform.system() == "Windows":
         asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
     result = asyncio.run(get_exchange())
-    print(data_processing(result))
+    pprint(data_processing(result))
